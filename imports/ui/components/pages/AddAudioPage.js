@@ -8,7 +8,7 @@ class AddAudioPage extends Component{
         let location = undefined;
 
           if(!this.props.isGeolocationAvailable || !this.props.isGeolocationEnabled){
-            alert('Your browser does not support Geolocation');
+            console.log('Your browser does not support Geolocation');
           }else if(this.props.coords){
             location = {lat: this.props.coords.latitude, lng: this.props.coords.longitude };
           }
